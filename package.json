@@ -1,0 +1,15 @@
+{
+  "name": "@wzlin/h",
+  "version": "0.0.1",
+  "files": [
+    "src/**"
+  ],
+  "scripts": {
+    "build": "for f in dom html react; do esbuild src/$f.js --bundle --external:react --minify --outfile=dist/$f.js --platform=browser --target=es6; done",
+    "format": "prettier -w 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.5",
+    "prettier": "^2.3.0"
+  }
+}

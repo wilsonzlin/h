@@ -34,4 +34,4 @@ export const parse = (selOrComp, props, childrenArr) => {
   };
 };
 
-export const exportTarget = typeof exports == 'object' ? exports : window;
+export const exportTarget = typeof exports == "object" ? exports : window;
